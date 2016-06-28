@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>倾听ST</title>
+<title>倾听MC</title>
+<link rel="icon" href="images/logo.ico" type="image/x-ico" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -28,10 +29,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="menu"><img src="images/menu.png" alt=""> </span>
 					<ul>
 						<li ><a href="index.html" class="hvr-sweep-to-bottom color"><i class="glyphicon glyphicon-home"></i>Home  </a> </li>
-						<li ><a href="album.html" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Albums  </a> </li>
-						<li><a href="blog.html"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Blog</a></li>
-						<li><a href="typo.html" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>Events </a></li>
-						<li><a href="mail.html" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Mail </a></li>
+						<li ><a href="album.html" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Albums </a> </li>
+						<li><a href="blog.html"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Music</a></li>
+						<li><a href="typo.html" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>About</a></li>
+						<li><a href="mail.html" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Contact</a></li>
 					<div class="clearfix"> </div>
 					</ul>
 					<!--script-->
@@ -125,13 +126,13 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 			<div class="clearfix"> </div>
 		</div>
 		<!--//content-top-->
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
+        <div class="copyrights">Collect from <a href="http://www.songtaste.com/" >ST</a></div>
 		<!--content-mid-->
 		<div class="content-mid">
 			<div class="col-md-4 mid">
 				<a href="single.html"><img src="images/1.jpg" alt="" class="img-responsive">
 				<div class="mid1">
-					<h4>热门音乐</h4>
+					<h4>hot music</h4>
 					<i class="glyphicon glyphicon-circle-arrow-right"></i>
 					<div class="clearfix"> </div>
 				</div>
@@ -140,7 +141,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 			<div class="col-md-4 mid">
 				<a href="single.html"><img src="images/2.jpg" alt="" class="img-responsive">
 				<div class="mid1">
-					<h4>热门专辑</h4>
+					<h4>hot album</h4>
 					<i class="glyphicon glyphicon-circle-arrow-right"></i>
 					<div class="clearfix"> </div>
 				</div>
@@ -149,7 +150,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 			<div class="col-md-4 mid">
 				<a href="single.html"><img src="images/4.jpg" alt="" class="img-responsive">
 				<div class="mid1">
-					<h4>加入我们</h4>
+					<h4>jion us</h4>
 					<i class="glyphicon glyphicon-circle-arrow-right"></i>
 					<div class="clearfix"> </div>
 				</div>
@@ -250,7 +251,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 						<li ><a href="album.html" >Albums  </a> </li>
 						<li><a href="blog.html"  >Blog</a></li>
 						<li><a href="typo.html" >Events </a></li>
-						<li><a href="mail.html" >Mail </a></li>
+						<li><a href="mail.html" >Contact</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<p >2016.MC Cottage Copyright &copy; <a href="http://www.cssmoban.com/" target="_blank" title="帮助">帮助</a> - Connecte to <a href="http://www.cssmoban.com/" title="联系我们" target="_blank">联系我们</a></p>
