@@ -14,6 +14,7 @@
 <meta name="keywords" content="Music Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 </head>
 <body>
 <!--header-->
@@ -21,7 +22,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 			<div class="header-top">
 				<div class="logo">
-					<h1><a href="index.html">Songtaste</a></h1>
+					<h1><a href="index.html">MC Cottage</a></h1>
 				</div>
 				<div class="top-nav">
 					<span class="menu"><img src="images/menu.png" alt=""> </span>
@@ -232,7 +233,6 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 				</div>
 				<div class="col-md-6 bottom-co1">
 					<img class="img-responsive" src="images/3.jpg" alt="">
-
 				</div>
 			</div>
 		</div>
@@ -243,17 +243,17 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 <!--footer-->
 <div class="footer">
 	<div class="container">
-		<h2><a href="index.html"> Music Club</a></h2>
+		<h2><a href="../index.ftl"> Music Club</a></h2>
 		
 					<ul>
-						<li ><a href="index.html" >Home  </a> </li>
+						<li ><a href="index.ftl" >Home  </a> </li>
 						<li ><a href="album.html" >Albums  </a> </li>
 						<li><a href="blog.html"  >Blog</a></li>
 						<li><a href="typo.html" >Events </a></li>
 						<li><a href="mail.html" >Mail </a></li>
 						<div class="clearfix"> </div>
 					</ul>
-					<p >2016.H2B Copyright &copy; <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">帮助</a> - Connecte to <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">联系我们</a></p>
+					<p >2016.MC Cottage Copyright &copy; <a href="http://www.cssmoban.com/" target="_blank" title="帮助">帮助</a> - Connecte to <a href="http://www.cssmoban.com/" title="联系我们" target="_blank">联系我们</a></p>
 	</div>
 </div>
 <!--//footer-->
