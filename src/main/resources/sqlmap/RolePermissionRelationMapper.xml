@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.songtaste.dao.RolePermissionRelationMapper" >
-  <resultMap id="BaseResultMap" type="com.songtaste.entity.RolePermissionRelation" >
+<mapper namespace="com.mccottage.dao.RolePermissionRelationMapper" >
+  <resultMap id="BaseResultMap" type="com.mccottage.entity.RolePermissionRelation" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="per_id" property="perId" jdbcType="BIGINT" />
     <result column="permission_id" property="permissionId" jdbcType="BIGINT" />
@@ -70,7 +70,7 @@
   <sql id="Base_Column_List" >
     id, per_id, permission_id, role_id, is_deleted, create_time
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.songtaste.entity.RolePermissionRelationExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mccottage.entity.RolePermissionRelationExample" >
     select
     <if test="distinct" >
       distinct
@@ -94,13 +94,13 @@
     delete from role_permission_relation
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.songtaste.entity.RolePermissionRelationExample" >
+  <delete id="deleteByExample" parameterType="com.mccottage.entity.RolePermissionRelationExample" >
     delete from role_permission_relation
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.songtaste.entity.RolePermissionRelation" >
+  <insert id="insert" parameterType="com.mccottage.entity.RolePermissionRelation" >
     insert into role_permission_relation (id, per_id, permission_id, 
       role_id, is_deleted, create_time
       )
@@ -108,7 +108,7 @@
       #{roleId,jdbcType=BIGINT}, #{isDeleted,jdbcType=INTEGER}, #{createTime,jdbcType=TIME}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.songtaste.entity.RolePermissionRelation" >
+  <insert id="insertSelective" parameterType="com.mccottage.entity.RolePermissionRelation" >
     insert into role_permission_relation
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -151,7 +151,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.songtaste.entity.RolePermissionRelationExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.mccottage.entity.RolePermissionRelationExample" resultType="java.lang.Integer" >
     select count(*) from role_permission_relation
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -195,7 +195,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.songtaste.entity.RolePermissionRelation" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.mccottage.entity.RolePermissionRelation" >
     update role_permission_relation
     <set >
       <if test="perId != null" >
@@ -216,7 +216,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.songtaste.entity.RolePermissionRelation" >
+  <update id="updateByPrimaryKey" parameterType="com.mccottage.entity.RolePermissionRelation" >
     update role_permission_relation
     set per_id = #{perId,jdbcType=BIGINT},
       permission_id = #{permissionId,jdbcType=BIGINT},

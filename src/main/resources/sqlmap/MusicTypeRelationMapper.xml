@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.songtaste.dao.MusicTypeRelationMapper" >
-  <resultMap id="BaseResultMap" type="com.songtaste.entity.MusicTypeRelation" >
+<mapper namespace="com.mccottage.dao.MusicTypeRelationMapper" >
+  <resultMap id="BaseResultMap" type="com.mccottage.entity.MusicTypeRelation" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="music_id" property="musicId" jdbcType="BIGINT" />
     <result column="type_id" property="typeId" jdbcType="BIGINT" />
@@ -68,7 +68,7 @@
   <sql id="Base_Column_List" >
     id, music_id, type_id, is_deleted
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.songtaste.entity.MusicTypeRelationExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mccottage.entity.MusicTypeRelationExample" >
     select
     <if test="distinct" >
       distinct
@@ -92,19 +92,19 @@
     delete from music_type_relation
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.songtaste.entity.MusicTypeRelationExample" >
+  <delete id="deleteByExample" parameterType="com.mccottage.entity.MusicTypeRelationExample" >
     delete from music_type_relation
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.songtaste.entity.MusicTypeRelation" >
+  <insert id="insert" parameterType="com.mccottage.entity.MusicTypeRelation" >
     insert into music_type_relation (id, music_id, type_id, 
       is_deleted)
     values (#{id,jdbcType=BIGINT}, #{musicId,jdbcType=BIGINT}, #{typeId,jdbcType=BIGINT}, 
       #{isDeleted,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.songtaste.entity.MusicTypeRelation" >
+  <insert id="insertSelective" parameterType="com.mccottage.entity.MusicTypeRelation" >
     insert into music_type_relation
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -135,7 +135,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.songtaste.entity.MusicTypeRelationExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.mccottage.entity.MusicTypeRelationExample" resultType="java.lang.Integer" >
     select count(*) from music_type_relation
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -171,7 +171,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.songtaste.entity.MusicTypeRelation" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.mccottage.entity.MusicTypeRelation" >
     update music_type_relation
     <set >
       <if test="musicId != null" >
@@ -186,7 +186,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.songtaste.entity.MusicTypeRelation" >
+  <update id="updateByPrimaryKey" parameterType="com.mccottage.entity.MusicTypeRelation" >
     update music_type_relation
     set music_id = #{musicId,jdbcType=BIGINT},
       type_id = #{typeId,jdbcType=BIGINT},

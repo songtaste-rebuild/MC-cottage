@@ -142,6 +142,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>songtaste</finalName>
+		<finalName>MC-Cottage</finalName>
 	</build>
 </project>

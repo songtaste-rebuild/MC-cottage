@@ -26,6 +26,8 @@
 		</property>
 	</bean> -->
 
+	<!-- 扫描包注解 -->
+    <context:component-scan base-package="com.mccottage"></context:component-scan>
 	<!-- mvc注解功能启动 -->
 	<mvc:annotation-driven />
 
