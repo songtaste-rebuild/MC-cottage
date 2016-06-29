@@ -3,6 +3,8 @@ package com.mccottage.utils;
 public class ResultConstant {
 
 	public static final String IS_SUCCESS = "isSuccess";
+	
+	public static final String ERROR_MSG = "errorMsg";
 
 	public enum Result {
 		SUCCESS(0, true), ERROR(1, false);
