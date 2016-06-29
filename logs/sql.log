@@ -1,0 +1,193 @@
+2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:26 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:26 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:26 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:43:26 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:43:26 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:43:26 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:57:00 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:57:00 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:57:00 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:57:33 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:57:33 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:57:33 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:57:34 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:57:34 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:57:34 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 13:57:34 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 13:57:34 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 13:57:34 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:01:55 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:01:55 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:01:55 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:04:58 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:04:58 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:04:58 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:05:04 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:05:04 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:05:04 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:05:06 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:05:06 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:05:06 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:06:11 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:06:11 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:06:11 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:08:36 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:08:36 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:08:36 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:12:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:12:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:12:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:13:03 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:13:03 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:13:03 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:22 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:22 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:22 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:15:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:16:33 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:16:33 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:16:33 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:21 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:21 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:21 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:23 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:24 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:25 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:48 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:48 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:48 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:49 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:18:50 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:21:41 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:21:41 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:21:41 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:21:43 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:21:43 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:21:43 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:23:03 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:23:03 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:23:03 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:23:11 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:23:11 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:23:11 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:23:13 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:23:13 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:23:13 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:23:16 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:23:16 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:23:16 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:23:17 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:23:17 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:23:17 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  2016-06-29 14:25:31 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==>  Preparing: select id, music_name, file_url, file_name, creator, status, create_time, is_deleted from music 
+  2016-06-29 14:25:31 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -==> Parameters: 
+  2016-06-29 14:25:31 [DEBUG] - com.mccottage.dao.MusicMapper.selectByExample -JakartaCommonsLoggingImpl.java(49) -<==      Total: 1
+  

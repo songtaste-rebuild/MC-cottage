@@ -3,6 +3,7 @@
 <mapper namespace="com.mccottage.dao.UserMapper" >
   <resultMap id="BaseResultMap" type="com.mccottage.entity.User" >
     <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
     <result column="role_id" property="roleId" jdbcType="BIGINT" />
     <result column="create_time" property="createTime" jdbcType="DATE" />
     <result column="is_deleted" property="isDeleted" jdbcType="INTEGER" />
@@ -68,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, role_id, create_time, is_deleted, user_status, user_name
+    id, password, role_id, create_time, is_deleted, user_status, user_name
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mccottage.entity.UserExample" >
     select
@@ -101,18 +102,21 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.mccottage.entity.User" >
-    insert into user (id, role_id, create_time, 
-      is_deleted, user_status, user_name
-      )
-    values (#{id,jdbcType=BIGINT}, #{roleId,jdbcType=BIGINT}, #{createTime,jdbcType=DATE}, 
-      #{isDeleted,jdbcType=INTEGER}, #{userStatus,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}
-      )
+    insert into user (id, password, role_id, 
+      create_time, is_deleted, user_status, 
+      user_name)
+    values (#{id,jdbcType=BIGINT}, #{password,jdbcType=VARCHAR}, #{roleId,jdbcType=BIGINT}, 
+      #{createTime,jdbcType=DATE}, #{isDeleted,jdbcType=INTEGER}, #{userStatus,jdbcType=INTEGER}, 
+      #{userName,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.mccottage.entity.User" >
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
+      </if>
+      <if test="password != null" >
+        password,
       </if>
       <if test="roleId != null" >
         role_id,
@@ -133,6 +137,9 @@
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
       </if>
       <if test="roleId != null" >
         #{roleId,jdbcType=BIGINT},
@@ -163,6 +170,9 @@
       <if test="record.id != null" >
         id = #{record.id,jdbcType=BIGINT},
       </if>
+      <if test="record.password != null" >
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
       <if test="record.roleId != null" >
         role_id = #{record.roleId,jdbcType=BIGINT},
       </if>
@@ -186,6 +196,7 @@
   <update id="updateByExample" parameterType="map" >
     update user
     set id = #{record.id,jdbcType=BIGINT},
+      password = #{record.password,jdbcType=VARCHAR},
       role_id = #{record.roleId,jdbcType=BIGINT},
       create_time = #{record.createTime,jdbcType=DATE},
       is_deleted = #{record.isDeleted,jdbcType=INTEGER},
@@ -198,6 +209,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.mccottage.entity.User" >
     update user
     <set >
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
       <if test="roleId != null" >
         role_id = #{roleId,jdbcType=BIGINT},
       </if>
@@ -218,7 +232,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.mccottage.entity.User" >
     update user
-    set role_id = #{roleId,jdbcType=BIGINT},
+    set password = #{password,jdbcType=VARCHAR},
+      role_id = #{roleId,jdbcType=BIGINT},
       create_time = #{createTime,jdbcType=DATE},
       is_deleted = #{isDeleted,jdbcType=INTEGER},
       user_status = #{userStatus,jdbcType=INTEGER},

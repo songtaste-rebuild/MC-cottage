@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>倾听MC</title>
-<link rel="icon" href="images/logo.ico" type="image/x-ico" />
+<head>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li ><a href="album.html" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Albums </a> </li>
 						<li><a href="blog.html"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Music</a></li>
 						<li><a href="typo.html" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>About</a></li>
-						<li><a href="mail.html" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Contact</a></li>
+						<li><a href="mail.ftl" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Contact</a></li>
 					<div class="clearfix"> </div>
 					</ul>
 					<!--script-->

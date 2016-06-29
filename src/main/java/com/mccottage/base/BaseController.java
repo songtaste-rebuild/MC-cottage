@@ -3,6 +3,7 @@ package com.mccottage.base;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.mccottage.service.MusicService;
+import com.mccottage.service.UserService;
 
 /**
  * 
@@ -13,5 +14,8 @@ public abstract class BaseController {
 
 	@Autowired
 	protected MusicService musicService;
+	
+	@Autowired
+	protected UserService userService;
 
 }

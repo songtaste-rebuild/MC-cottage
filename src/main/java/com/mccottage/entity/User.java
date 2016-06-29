@@ -3,63 +3,80 @@ package com.mccottage.entity;
 import java.util.Date;
 
 public class User {
-    private Long id;
+	private Long id;
 
-    private Long roleId;
+	private String password;
 
-    private Date createTime;
+	private Long roleId;
 
-    private Integer isDeleted;
+	private Date createTime;
 
-    private Integer userStatus;
+	private Integer isDeleted;
 
-    private String userName;
+	private Integer userStatus;
 
-    public Long getId() {
-        return id;
-    }
+	private String userName;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public Long getRoleId() {
-        return roleId;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public void setRoleId(Long roleId) {
-        this.roleId = roleId;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public Date getCreateTime() {
-        return createTime;
-    }
+	public void setPassword(String password) {
+		this.password = password == null ? null : password.trim();
+	}
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
+	public Long getRoleId() {
+		return roleId;
+	}
 
-    public Integer getIsDeleted() {
-        return isDeleted;
-    }
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
+	}
 
-    public void setIsDeleted(Integer isDeleted) {
-        this.isDeleted = isDeleted;
-    }
+	public Date getCreateTime() {
+		return createTime;
+	}
 
-    public Integer getUserStatus() {
-        return userStatus;
-    }
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
 
-    public void setUserStatus(Integer userStatus) {
-        this.userStatus = userStatus;
-    }
+	public Integer getIsDeleted() {
+		return isDeleted;
+	}
 
-    public String getUserName() {
-        return userName;
-    }
+	public void setIsDeleted(Integer isDeleted) {
+		this.isDeleted = isDeleted;
+	}
 
-    public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
-    }
+	public Integer getUserStatus() {
+		return userStatus;
+	}
+
+	public void setUserStatus(Integer userStatus) {
+		this.userStatus = userStatus;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName == null ? null : userName.trim();
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", password=" + password + ", roleId=" + roleId + ", createTime=" + createTime
+				+ ", isDeleted=" + isDeleted + ", userStatus=" + userStatus + ", userName=" + userName + "]";
+	}
+
 }

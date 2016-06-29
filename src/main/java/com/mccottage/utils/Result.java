@@ -19,7 +19,7 @@ public class Result<T> {
 		return new Result<T>().getError(errorMsg);
 	}
 
-	public Object getContext() {
+	public T getContext() {
 		return context;
 	}
 

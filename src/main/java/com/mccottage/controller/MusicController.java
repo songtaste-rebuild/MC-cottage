@@ -19,9 +19,7 @@ public class MusicController extends BaseController {
 	private static final Logger log = Logger.getLogger(MusicController.class);
 	@RequestMapping("list.do")
 	public String getMusicList(HttpServletRequest request) {
-		log.debug("request ....");
 		Result<List<Music>> result = musicService.searchMusicBySelective(new MusicExample());
-		if (result.isSuccess) return "success";
-		else return "error";
+		return "album";
 	}
 }

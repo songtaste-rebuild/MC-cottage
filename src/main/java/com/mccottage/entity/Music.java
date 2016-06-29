@@ -3,90 +3,83 @@ package com.mccottage.entity;
 import java.util.Date;
 
 public class Music {
+    private Long id;
 
-	private Long id;
+    private String musicName;
 
-	private String musicName;
+    private String fileUrl;
 
-	private String fileUrl;
+    private String fileName;
 
-	private String fileName;
+    private Long creator;
 
-	private Long creator;
+    private Integer status;
 
-	private Integer status;
+    private Date createTime;
 
-	private Date createTime;
+    private Integer isDeleted;
 
-	private Integer isDeleted;
+    public Long getId() {
+        return id;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public String getMusicName() {
+        return musicName;
+    }
 
-	public String getMusicName() {
-		return musicName;
-	}
+    public void setMusicName(String musicName) {
+        this.musicName = musicName == null ? null : musicName.trim();
+    }
 
-	public void setMusicName(String musicName) {
-		this.musicName = musicName == null ? null : musicName.trim();
-	}
+    public String getFileUrl() {
+        return fileUrl;
+    }
 
-	public String getFileUrl() {
-		return fileUrl;
-	}
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl == null ? null : fileUrl.trim();
+    }
 
-	public void setFileUrl(String fileUrl) {
-		this.fileUrl = fileUrl == null ? null : fileUrl.trim();
-	}
+    public String getFileName() {
+        return fileName;
+    }
 
-	public String getFileName() {
-		return fileName;
-	}
+    public void setFileName(String fileName) {
+        this.fileName = fileName == null ? null : fileName.trim();
+    }
 
-	public void setFileName(String fileName) {
-		this.fileName = fileName == null ? null : fileName.trim();
-	}
+    public Long getCreator() {
+        return creator;
+    }
 
-	public Long getCreator() {
-		return creator;
-	}
+    public void setCreator(Long creator) {
+        this.creator = creator;
+    }
 
-	public void setCreator(Long creator) {
-		this.creator = creator;
-	}
+    public Integer getStatus() {
+        return status;
+    }
 
-	public Integer getStatus() {
-		return status;
-	}
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
 
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
+    public Date getCreateTime() {
+        return createTime;
+    }
 
-	public Date getCreateTime() {
-		return createTime;
-	}
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
 
-	public Integer getIsDeleted() {
-		return isDeleted;
-	}
-
-	public void setIsDeleted(Integer isDeleted) {
-		this.isDeleted = isDeleted;
-	}
-
-	@Override
-	public String toString() {
-		return "Music [id=" + id + ", musicName=" + musicName + ", fileUrl=" + fileUrl + ", fileName=" + fileName
-				+ ", status=" + status + "]";
-	}
+    public void setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+    }
 }
