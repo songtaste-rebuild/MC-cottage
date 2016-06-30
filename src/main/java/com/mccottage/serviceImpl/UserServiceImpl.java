@@ -16,7 +16,7 @@ public class UserServiceImpl extends BaseService implements UserService{
 	
 	private static final Logger log = Logger.getLogger(UserService.class);
 
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings({ "rawtypes", "static-access" })
 	public Result registerUser(User user) {
 		log.debug("register user : " + user);
 		try {
@@ -46,4 +46,17 @@ public class UserServiceImpl extends BaseService implements UserService{
 		return result;
 	}
 
+	@SuppressWarnings("null")
+	public Result<Object> updateUser(User user) {
+		log.debug("updateUser params : user " + user);
+		Result<Object> result = null;
+		try {
+			userMapper.updateByPrimaryKeySelective(user);
+			result.setSuccess(false);
+		} catch (Exception ex) {
+			result = Result.getError("update error");
+			log.error("update user error ");
+		}
+		return result;
+	}
 }
