@@ -40,7 +40,7 @@ public class UserController extends BaseController {
 			}
 			else {
 				resultMap.put(ResultConstant.IS_SUCCESS, ResultConstant.Result.ERROR.isSuccess());
-				resultMap.put(ResultConstant.ERROR_MSG, "µÇÂ½Ãû»òÔòÃÜÂë´íÎó");
+				resultMap.put(ResultConstant.ERROR_MSG, "ç”¨æˆ·åæˆ–åˆ™å¯†ç é”™è¯¯");
 			}
 		} catch (Exception ex) {
 			log.error("login error");
@@ -55,11 +55,11 @@ public class UserController extends BaseController {
 		User user = (User) session.getAttribute("user");
 		if (user == null) {
 			reslutMap.put(ResultConstant.IS_SUCCESS, ResultConstant.Result.ERROR.isSuccess());
-			reslutMap.put(ResultConstant.ERROR_MSG, "µ±Ç°Î´µÇÂ½");
+			reslutMap.put(ResultConstant.ERROR_MSG, "å½“å‰ç”¨æˆ·ä¸å­˜åœ¨");
 			return JSONObject.fromObject(reslutMap).toString();
 		} else {
 			try {
-				// MD5¼ÓÃÜ
+				// MD5åŠ å¯†
 				user.setPassword(MD5Utils.getMD5Format(password));
 				userService.updateUser(user);
 			} catch (Exception ex) {
@@ -80,7 +80,7 @@ public class UserController extends BaseController {
 			resultMap.put(ResultConstant.IS_SUCCESS, ResultConstant.Result.SUCCESS.isSuccess());
 		} catch (Exception ex) {
 			log.error("logout error : msg :" + ex.getMessage());
-			resultMap.put(ResultConstant.ERROR_MSG, "µÇ³öÊ§°Ü");
+			resultMap.put(ResultConstant.ERROR_MSG, "ç™»å‡ºå¤±è´¥");
 		}
 		return JSONObject.fromObject(resultMap).toString();
 	}
