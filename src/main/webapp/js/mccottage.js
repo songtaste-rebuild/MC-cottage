@@ -3,8 +3,9 @@
  */
 $(document).ready(function() {
 	$("#login").click(function() {
-		loginJson = '{"username:"' + $("#username").val() + ',"password":' + $("#password").val();
+		loginJson = '{"userName":"' + $("#username").val() + '","password":"' + $("#password").val() + '"}';
 		$.ajax({
+			contentType : 'application/json',
 			type : 'POST',
 			url : 'login.do',
 			dataType : 'JSON',
