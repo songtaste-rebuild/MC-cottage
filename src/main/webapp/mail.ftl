@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		
 					<div class="contact-grids">
 						<div class="contact-form">
-							<form>
+							<form action="">
 								<div class="contact-bottom">
 									<div class="col-md-4 in-contact">
 										<span>Name :</span>
@@ -81,11 +81,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<span>Message :</span>
 									<textarea> </textarea>
 								</div>
-								<input id="login" type="submit" value="Send">
+								<button id="login" >Send  </button>
 							</form>
 						</div>
 						<div class="address">
-					
 					
 					<div class="col-md-4 address-more">
 						<h4>Address</h4>

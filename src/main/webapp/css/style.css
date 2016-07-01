@@ -473,7 +473,7 @@ h1,h2,h3,h4,h5,h6,p,label{
 .contact-bottom-top {
 	  margin: 1em 15px 0;
 }
-.contact-form input[type="submit"]{
+.contact-form button{
 	background: none;
 	color: #29C4CA;
 	border: 1px solid #29C4CA;
@@ -488,7 +488,7 @@ h1,h2,h3,h4,h5,h6,p,label{
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
-.contact-form input[type="submit"]:hover{
+.contact-form button:hover{
 	background: #29C4CA;
 	color:#fff;
 }
