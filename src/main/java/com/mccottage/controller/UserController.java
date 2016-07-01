@@ -1,50 +1,73 @@
 package com.mccottage.controller;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.servlet.http.HttpSession;
-
-import net.sf.json.JSONObject;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mccottage.base.BaseController;
 import com.mccottage.entity.User;
 import com.mccottage.utils.MD5Utils;
 import com.mccottage.utils.Result;
-import com.mccottage.utils.ResultConstant;
+
 @Controller
 public class UserController extends BaseController {
-	
+
 	private static final Logger log = Logger.getLogger(UserController.class);
-	
-	
+
 	@RequestMapping(value = "login.do", method = RequestMethod.POST)
 	@ResponseBody
 	public String login(@RequestBody User user, HttpSession session) {
 		log.debug("login ,userInfo " + user);
-		Map<String, Object> resultMap = new HashMap<String, Object>();
+		Result<User> result = null;
 		try {
 			user.setPassword(MD5Utils.getMD5Format(user.getPassword()));
-			Result<User> result = userService.login(user);
-			if (result.getContext() != null) {
-				resultMap.put(ResultConstant.IS_SUCCESS, ResultConstant.Result.SUCCESS.isSuccess());
+			result = userService.login(user);
+			if (result.isSuccess) {
 				session.setAttribute("user", user);
-			}
-			else {
-				resultMap.put(ResultConstant.IS_SUCCESS, ResultConstant.Result.ERROR.isSuccess());
-				resultMap.put(ResultConstant.ERROR_MSG, "µÇÂ½Ãû»òÔòÃÜÂë´íÎó");
 			}
 		} catch (Exception ex) {
 			log.error("login error");
+			result = Result.getError("å¼‚å¸¸");
 		}
-		return JSONObject.fromObject(resultMap).toString();
+		return parseResultToJSON(result);
 	}
-	
+
+	// update password
+	@RequestMapping(value = "updatePassword.do", method = RequestMethod.POST)
+	public @ResponseBody String updatePassword(
+			@RequestParam("password") String password, HttpSession session) {
+		Result<Object> result = null;
+		try {
+			User user = (User) session.getAttribute("user");
+			// MD5åŠ å¯†
+			user.setPassword(MD5Utils.getMD5Format(password));
+			result = userService.updateUser(user);
+		} catch (Exception ex) {
+			log.error("update password error : msg : " + ex.getMessage());
+			result = Result.getError("ä¿®æ”¹å¼‚å¸¸");
+		}
+		return parseResultToJSON(result);
+
+	}
+
+	// logout
+	@RequestMapping(value = "logout.do", method = RequestMethod.POST)
+	public @ResponseBody String logout(HttpSession session) {
+		Result<Object> result = new Result<Object>();
+		try {
+			session.invalidate();
+			result.setSuccess(true);
+		} catch (Exception ex) {
+			log.error("logout error : msg :" + ex.getMessage());
+			result.setSuccess(false);
+		}
+		return parseResultToJSON(result);
+	}
+
 }
