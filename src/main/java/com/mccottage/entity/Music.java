@@ -82,4 +82,12 @@ public class Music {
     public void setIsDeleted(Integer isDeleted) {
         this.isDeleted = isDeleted;
     }
+
+	@Override
+	public String toString() {
+		return "Music [id=" + id + ", musicName=" + musicName + ", fileUrl=" + fileUrl + ", fileName=" + fileName
+				+ ", creator=" + creator + ", status=" + status + "]";
+	}
+    
+    
 }
