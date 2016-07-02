@@ -58,4 +58,14 @@ public class UserGroupServiceImpl extends BaseService implements
 		}
 		return false;
 	}
+
+	public UserGroup selectUserGroupById(Long userGroupId) {
+		log.debug("search userGroup by id : " + userGroupId);
+		try {
+			return userGroupMapper.selectByPrimaryKey(userGroupId);
+		} catch (Exception ex) {
+			log.error("error message " + ex.getMessage());
+		}
+		return null;
+	}
 }

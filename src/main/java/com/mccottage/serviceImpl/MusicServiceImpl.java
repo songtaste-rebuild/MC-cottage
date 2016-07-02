@@ -128,7 +128,16 @@ public class MusicServiceImpl extends BaseService implements MusicService {
 		return result;
 	}
 
-	public Result<List<Music>> selectMusicList(MusicExample musicExample) {
-		return null;
+
+	public Result<Music> selectMusicById(Long musicId) {
+		Result<Music> result = new Result<Music>();
+		result.setSuccess(false);
+		try {
+			result.setContext(musicMapper.selectByPrimaryKey(musicId));
+			result.setSuccess(true);
+		} catch (Exception ex) {
+			log.error("error message  " + ex.getMessage());
+		}
+		return result;
 	}
 }

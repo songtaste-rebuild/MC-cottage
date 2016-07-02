@@ -27,4 +27,7 @@ public interface UserGroupService {
 
 	// modify userGroup
 	public boolean updateUserGroup(UserGroup userGroup);
+	
+	// searchUserGroup by id
+	public UserGroup selectUserGroupById(Long userGroupId);
 }

@@ -36,7 +36,7 @@ public interface MusicService {
 	// 删除音乐
 	public Result<Object> deleteMusic(Long musicId);
 	
-	// 查询音乐
-	public Result<List<Music>> selectMusicList(MusicExample musicExample);
+	// ID查询音乐
+	public Result<Music> selectMusicById(Long musicId);
 
 }
