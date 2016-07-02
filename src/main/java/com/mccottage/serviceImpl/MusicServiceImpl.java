@@ -2,7 +2,6 @@ package com.mccottage.serviceImpl;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import com.mccottage.base.BaseService;
@@ -17,8 +16,6 @@ import com.mccottage.utils.SongtasteUtils;
 
 @Service
 public class MusicServiceImpl extends BaseService implements MusicService {
-
-	private static final Logger log = Logger.getLogger(MusicService.class);
 
 	public Result<Object> downloadMusicByOneUrl(String url) {
 		Result<Object> result = new Result<Object>();
@@ -54,7 +51,8 @@ public class MusicServiceImpl extends BaseService implements MusicService {
 				result.setContext(musicList);
 			}
 		} catch (Exception ex) {
-			log.error("search Music by selective error, message : " + ex.getMessage());
+			log.error("search Music by selective error, message : "
+					+ ex.getMessage());
 			return Result.getError("search error");
 		}
 		return result.setSuccess(true);
@@ -84,14 +82,16 @@ public class MusicServiceImpl extends BaseService implements MusicService {
 	public Result<Object> removeMusicFromAlbum(Long[] musicIdList, Long ablumId) {
 		Result<Object> result = new Result<Object>();
 		result.setSuccess(false);
-		log.debug("removeMusicFromAlbum params : musicIdList :" + musicIdList + " , albumId : " + ablumId);
+		log.debug("removeMusicFromAlbum params : musicIdList :" + musicIdList
+				+ " , albumId : " + ablumId);
 		try {
 			MusicAlbumRelationExample musicAlbumRelationExample = new MusicAlbumRelationExample();
 			Criteria criteria = musicAlbumRelationExample.createCriteria();
 			criteria.andAlbumEqualTo(ablumId);
 			for (Long id : musicIdList) {
 				criteria.andMusicIdEqualTo(id);
-				musicAlbumRelationMapper.deleteByExample(musicAlbumRelationExample);
+				musicAlbumRelationMapper
+						.deleteByExample(musicAlbumRelationExample);
 			}
 			result.setSuccess(true);
 		} catch (Exception ex) {

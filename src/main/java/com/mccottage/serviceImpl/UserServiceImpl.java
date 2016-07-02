@@ -1,21 +1,22 @@
 package com.mccottage.serviceImpl;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import com.mccottage.base.BaseService;
 import com.mccottage.entity.User;
 import com.mccottage.entity.UserExample;
+import com.mccottage.entity.UserGroupRelation;
+import com.mccottage.entity.UserGroupRelationExample;
 import com.mccottage.service.UserService;
 import com.mccottage.utils.Result;
 
 @Service
 public class UserServiceImpl extends BaseService implements UserService{
 	
-	private static final Logger log = Logger.getLogger(UserService.class);
-
 	@SuppressWarnings({ "rawtypes", "static-access" })
 	public Result registerUser(User user) {
 		log.debug("register user : " + user);
@@ -58,5 +59,48 @@ public class UserServiceImpl extends BaseService implements UserService{
 			log.error("update user error ");
 		}
 		return result;
+	}
+
+	public boolean addUserGroup(Long userId, List<Long> userGroupIdList) {
+		log.debug("addUserGroup : userId  = " + userId + " userGroupList = " + userGroupIdList);
+		try {
+			for (Long groupId : userGroupIdList) {
+				UserGroupRelation userGroupRelation = new UserGroupRelation();
+				userGroupRelation.setCreateTime(new Date());
+				userGroupRelation.setGroupId(groupId);
+				userGroupRelation.setUseId(userId);
+				userGroupRelationMapper.insert(userGroupRelation);
+			}
+			return true;
+		} catch (Exception ex) {
+			log.error("error message : " + ex.getMessage());
+		}
+		return false;
+	}
+
+	public boolean removeUserFromGroup(Long userId, List<Long> userGroupIdList) {
+		log.debug("remove user from group , userId = " + userId + ", userGroupList = " + userGroupIdList);
+		try {
+			for (Long groupId : userGroupIdList) {
+				UserGroupRelationExample userGroupRelationExample = new UserGroupRelationExample();
+				userGroupRelationExample.or().andUserIdEqualTo(userId).andGroupIdEqualTo(groupId);
+				userGroupRelationMapper.deleteByExample(userGroupRelationExample);
+			}
+			return true;
+		} catch (Exception ex) {
+			log.error("error message : " + ex.getMessage());
+		}
+		return false;
+	}
+
+	public List<User> searchUserByExample(UserExample userExample) {
+		log.debug("searchUser..");
+		try {
+			List<User> userList = userMapper.selectByExample(userExample);
+			return userList;
+		} catch (Exception ex) {
+			log.error("error Message : " + ex.getMessage());
+		}
+		return new ArrayList<User>();
 	}
 }

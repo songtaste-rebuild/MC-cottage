@@ -21,8 +21,8 @@ public class SongtasteUtils {
 
 	private static String musicName;
 
-	private static final String outFilePath = "H:" + File.separator
-			+ "songtaste download" + File.separator + "page11" + File.separator;
+	// TODO must to assign download path
+	public static String outFilePath = "";
 
 	// 文件后缀
 	public static final String FILE_SUFFIX = ".mp3";
