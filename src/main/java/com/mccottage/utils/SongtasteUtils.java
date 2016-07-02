@@ -22,7 +22,7 @@ public class SongtasteUtils {
 	private static String musicName;
 
 	// TODO must to assign download path
-	public static String outFilePath = "";
+	public static String OUT_FILE_PATH = "";
 
 	// 文件后缀
 	public static final String FILE_SUFFIX = ".mp3";
@@ -35,6 +35,13 @@ public class SongtasteUtils {
 	// 歌曲页面下载
 	public static boolean downloadByPage(String pageUrl) throws Exception {
 		try {
+			// 判断该目录是否存在
+			File dir = new File(OUT_FILE_PATH);
+			if (!dir.exists()) {
+				if (dir.mkdir()) {
+					log.debug("创建目录" + OUT_FILE_PATH);
+				} 
+			}
 			String htmlContext = sendRequest(pageUrl, true);
 
 			// 获取到所有歌曲url列表
@@ -142,7 +149,7 @@ public class SongtasteUtils {
 				/ (1024 * 1024) + "MB");
 		byte[] b = new byte[1024 * 10];
 
-		File file = new File(outFilePath + musicName + FILE_SUFFIX);
+		File file = new File(OUT_FILE_PATH + File.separator + musicName + FILE_SUFFIX);
 		if (file.exists()) {
 			log.debug("file exits , download next");
 			return;
