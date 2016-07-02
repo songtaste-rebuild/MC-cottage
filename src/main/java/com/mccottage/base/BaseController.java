@@ -8,6 +8,7 @@ import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.mccottage.service.MusicService;
+import com.mccottage.service.UserGroupService;
 import com.mccottage.service.UserService;
 import com.mccottage.utils.Result;
 import com.mccottage.utils.ResultConstant;
@@ -24,6 +25,9 @@ public abstract class BaseController {
 	
 	@Autowired
 	protected UserService userService;
+	
+	@Autowired
+	private UserGroupService userGroupService;
 	
 	protected <T> String parseResultToJSON(Result<T> result) {
 		Map<String, Object> resultMap = new HashMap<String, Object>();

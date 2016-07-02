@@ -3,6 +3,8 @@ package com.mccottage.serviceImpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.mccottage.base.BaseService;
 import com.mccottage.entity.UserGroup;
 import com.mccottage.entity.UserGroupExample;
@@ -11,6 +13,7 @@ import com.mccottage.service.UserGroupService;
 /*
  * this programe writted by micro
  */
+@Service
 public class UserGroupServiceImpl extends BaseService implements
 		UserGroupService {
 

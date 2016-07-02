@@ -42,4 +42,11 @@ public class MusicType {
     public void setIsDeleted(Integer isDeleted) {
         this.isDeleted = isDeleted;
     }
+
+	@Override
+	public String toString() {
+		return "MusicType [id=" + id + ", typeName=" + typeName + "]";
+	}
+    
+    
 }
