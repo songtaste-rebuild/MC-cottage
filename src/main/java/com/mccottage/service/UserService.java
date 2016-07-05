@@ -7,7 +7,13 @@ import org.apache.log4j.Logger;
 import com.mccottage.entity.User;
 import com.mccottage.entity.UserExample;
 import com.mccottage.utils.Result;
-
+/**
+ * 
+ * @author mapc
+ * UserService.java
+ * 2016年7月2日
+ * @Description
+ */
 public interface UserService {
 	
 	static final Logger log = Logger.getLogger(UserService.class);

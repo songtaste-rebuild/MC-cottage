@@ -8,8 +8,12 @@ import com.mccottage.entity.Music;
 import com.mccottage.entity.MusicExample;
 import com.mccottage.utils.Result;
 
-/*
- * this programe writted by micro
+/**
+ * 
+ * @author mapc
+ * MusicService.java
+ * 2016年7月5日
+ * @Description
  */
 public interface MusicService {
 	

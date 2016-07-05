@@ -4,8 +4,10 @@ import com.mccottage.entity.MusicType;
 
 /**
  * 
- * @author micro
- * @date 2016/7/2
+ * @author mapc
+ * MusicTypeService.java
+ * 2016年7月1日
+ * @Description
  */
 public interface MusicTypeService {
 	// music add type

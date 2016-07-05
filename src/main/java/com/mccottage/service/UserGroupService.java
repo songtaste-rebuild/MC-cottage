@@ -9,8 +9,10 @@ import com.mccottage.entity.UserGroupExample;
 
 /**
  * 
- * @author micro
- *
+ * @author mapc
+ * UserGroupService.java
+ * 2016年6月25日
+ * @Description
  */
 public interface UserGroupService {
 
