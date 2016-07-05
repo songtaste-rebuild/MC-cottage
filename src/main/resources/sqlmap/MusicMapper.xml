@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.songtaste.dao.MusicMapper" >
-  <resultMap id="BaseResultMap" type="com.songtaste.entity.Music" >
+<mapper namespace="com.mccottage.dao.MusicMapper" >
+  <resultMap id="BaseResultMap" type="com.mccottage.entity.Music" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="music_name" property="musicName" jdbcType="VARCHAR" />
     <result column="file_url" property="fileUrl" jdbcType="VARCHAR" />
@@ -72,7 +72,7 @@
   <sql id="Base_Column_List" >
     id, music_name, file_url, file_name, creator, status, create_time, is_deleted
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.songtaste.entity.MusicExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mccottage.entity.MusicExample" >
     select
     <if test="distinct" >
       distinct
@@ -96,13 +96,13 @@
     delete from music
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.songtaste.entity.MusicExample" >
+  <delete id="deleteByExample" parameterType="com.mccottage.entity.MusicExample" >
     delete from music
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.songtaste.entity.Music" >
+  <insert id="insert" parameterType="com.mccottage.entity.Music" >
     insert into music (id, music_name, file_url, 
       file_name, creator, status, 
       create_time, is_deleted)
@@ -110,7 +110,7 @@
       #{fileName,jdbcType=VARCHAR}, #{creator,jdbcType=BIGINT}, #{status,jdbcType=INTEGER}, 
       #{createTime,jdbcType=TIME}, #{isDeleted,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.songtaste.entity.Music" >
+  <insert id="insertSelective" parameterType="com.mccottage.entity.Music" >
     insert into music
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -165,7 +165,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.songtaste.entity.MusicExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.mccottage.entity.MusicExample" resultType="java.lang.Integer" >
     select count(*) from music
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -217,7 +217,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.songtaste.entity.Music" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.mccottage.entity.Music" >
     update music
     <set >
       <if test="musicName != null" >
@@ -244,7 +244,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.songtaste.entity.Music" >
+  <update id="updateByPrimaryKey" parameterType="com.mccottage.entity.Music" >
     update music
     set music_name = #{musicName,jdbcType=VARCHAR},
       file_url = #{fileUrl,jdbcType=VARCHAR},
