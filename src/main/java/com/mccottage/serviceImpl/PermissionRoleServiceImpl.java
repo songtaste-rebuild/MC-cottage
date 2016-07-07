@@ -54,4 +54,25 @@ public class PermissionRoleServiceImpl extends BaseService implements Permission
 		return null;
 	}
 
+	@Override
+	public List<Permission> getPermissionByUserId(Long userId) {
+		// 一个用户一个角色
+		log.debug("getPermissionByUserId , userId = " + userId);
+		try {
+			/*RolePermissionRelationExample rolePermissionRelationExample = new RolePermissionRelationExample();
+			rolePermissionRelationExample.or().andRoleIdEqualTo(userMapper.selectByPrimaryKey(userId).getRoleId());
+			List<Permission> permissionList = new ArrayList<Permission>();
+			for (RolePermissionRelation rpr : rolePermissionRelationMapper.selectByExample(rolePermissionRelationExample)) {
+				permissionList.add(permissionMapper.selectByPrimaryKey(rpr.getPermissionId()));
+			}
+			return permissionList;*/
+			
+			// 调用
+			return getPermissionByRole(getRoleByUserId(userId).getId());
+		} catch (Exception ex) {
+			log.error("error message : " + ex.getMessage());
+		}
+		return null;
+	}
+
 }

@@ -16,5 +16,7 @@ public interface PermissionRoleService {
 
 	// 获取角色权限
 	public List<Permission> getPermissionByRole(Long roleId);
+	
+	public List<Permission> getPermissionByUserId(Long userId);
 
 }
