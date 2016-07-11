@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.mccottage.base.BaseController;
 import com.mccottage.entity.Music;
@@ -48,4 +49,21 @@ public class MusicController extends BaseController {
 		Result<List<Music>> result = musicService.searchMusicBySelective(musicExample);
 		return parseResultToJSON(result);
 	}
+	
+	// “Ù¿÷œÍ«È
+	@RequestMapping("/music/detail.do")
+	public ModelAndView musicDetail(@RequestParam("musicId") Long musicId) {
+		log.debug("musicDetail , musicId =  " + musicId);
+		Result<Music> result = musicService.selectMusicById(musicId);
+		ModelAndView mav = new ModelAndView();
+		if (result.isSuccess) {
+			mav.addObject("music", result.getContext());
+			mav.setViewName("musicDetail");
+		} else {
+			log.error("error message : " + result.getErrorMsg());
+			mav.setViewName("error");
+		}
+		return mav;
+	}
+	
 }
