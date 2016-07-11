@@ -75,7 +75,7 @@ public class UserController extends BaseController {
 		return parseResultToJSON(result);
 	}
 
-	// ÓÃ»§×éÏêÇé
+	// ç”¨æˆ·ç»„è¯¦æƒ…
 	/**
 	 * 
 	 * @param groupId
@@ -88,7 +88,7 @@ public class UserController extends BaseController {
 			UserGroup userGroup = userGroupService.selectUserGroupById(groupId);
 			ModelAndView mav = new ModelAndView();
 			mav.addObject("userGroup", userGroup);
-			// ÓÃ»§×éÏêÇéÒ³Ãæ
+			// ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
 			mav.setViewName("groupDetail");
 			return mav;
 		} catch (Exception ex) {
@@ -97,7 +97,7 @@ public class UserController extends BaseController {
 		}
 	}
 	
-	// ÓÃ»§×éÁÐ±í
+	// ç”¨æˆ·ç»„åˆ—è¡¨
 	/**
 	 * 
 	 * @param groupName
@@ -111,7 +111,7 @@ public class UserController extends BaseController {
 			UserGroupExample userGroupExample = new UserGroupExample();
 			userGroupExample.or().andGroupNameEqualTo("%" + groupName + "%");
 			List<UserGroup> userGroupList = userGroupService.searchUserGroup(userGroupExample);
-			// ÓÃ»§×éÁÐ±íÊÓÍ¼
+			// ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½Í¼
 			mav.setViewName("groupList");
 			mav.addObject("groupList", userGroupList);
 		} catch (Exception ex) {

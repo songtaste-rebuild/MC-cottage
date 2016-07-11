@@ -50,7 +50,7 @@ public class MusicController extends BaseController {
 		return parseResultToJSON(result);
 	}
 	
-	// ÒôÀÖÏêÇé
+	// éŸ³ä¹è¯¦æƒ…
 	@RequestMapping("/music/detail.do")
 	public ModelAndView musicDetail(@RequestParam("musicId") Long musicId) {
 		log.debug("musicDetail , musicId =  " + musicId);
