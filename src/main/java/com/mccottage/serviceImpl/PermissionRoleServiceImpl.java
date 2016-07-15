@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import com.mccottage.base.BaseService;
 import com.mccottage.entity.Permission;
@@ -13,6 +14,7 @@ import com.mccottage.entity.RolePermissionRelationExample;
 import com.mccottage.entity.User;
 import com.mccottage.service.PermissionRoleService;
 
+@Service
 public class PermissionRoleServiceImpl extends BaseService implements PermissionRoleService {
 
 	private static final Logger log = Logger.getLogger(PermissionRoleService.class);

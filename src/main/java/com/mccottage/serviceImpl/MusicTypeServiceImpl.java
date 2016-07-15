@@ -1,6 +1,7 @@
 package com.mccottage.serviceImpl;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import com.mccottage.base.BaseService;
 import com.mccottage.entity.MusicType;
@@ -11,6 +12,7 @@ import com.mccottage.service.MusicTypeService;
  * @author micro
  *
  */
+@Service
 public class MusicTypeServiceImpl extends BaseService implements
 		MusicTypeService {
 	
