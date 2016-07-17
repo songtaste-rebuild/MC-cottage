@@ -43,6 +43,11 @@ public class UserController extends BaseController {
 		}
 		return parseResultToJSON(result);
 	}
+	
+	@RequestMapping(value = "home.do", method = RequestMethod.GET)
+	public String home(){
+		return "album";
+	}
 
 	// update password
 	@RequestMapping(value = "updatePassword.do", method = RequestMethod.POST)

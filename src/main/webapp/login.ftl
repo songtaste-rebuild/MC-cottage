@@ -47,7 +47,7 @@
 				<div class="controls">
 					<div class="input-icon left">
 						<i class="icon-user"></i>
-						<input class="m-wrap placeholder-no-fix" type="text" id="username"  placeholder="用户名"  name="username"/>
+						<input class="m-wrap placeholder-no-fix" type="text" id="username" autocomplete="off"  placeholder="用户名"  name="username"/>
 					</div>
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 				<div class="controls">
 					<div class="input-icon left">
 						<i class="icon-lock"></i>
-						<input class="m-wrap placeholder-no-fix" type="password" id="password" placeholder="密码" name="password" />
+						<input class="m-wrap placeholder-no-fix" type="password" id="password" autocomplete="off" placeholder="密码" name="password" />
 					</div>
 				</div>
 			</div>
@@ -192,13 +192,13 @@
 	<!-- END PAGE LEVEL PLUGINS -->
 	<!-- BEGIN PAGE LEVEL SCRIPTS -->
 	<script src="media/js/app.js" type="text/javascript"></script>
-	<script src="media/js/login.js" type="text/javascript"></script>   		<script src="customer/js/mccottage.js" type="text/javascript"></script>    
+	<script src="media/js/login.js" type="text/javascript"></script>   	   
 	<!-- END PAGE LEVEL SCRIPTS --> 
 	<script>		jQuery(document).ready(function() {     
 		 App.init();
 		 Login.init();
 		});
-	</script>
+	</script>		<script src="customer/js/mccottage.js" type="text/javascript"></script> 
 	<!-- END JAVASCRIPTS -->
 <script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script></body>
 <!-- END BODY -->
