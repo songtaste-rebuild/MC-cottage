@@ -40,6 +40,10 @@ public class UserServiceImpl extends BaseService implements UserService{
 			if (userList != null && userList.size() > 0) {
 				user = userList.get(0);
 				result.setContext(user);
+				result.setSuccess(true);
+			} else {
+				result.setSuccess(false);
+				result.setErrorMsg("用户不存在");
 			}
 		} catch (Exception ex) {
 			log.error("login error : login Info : " + user);

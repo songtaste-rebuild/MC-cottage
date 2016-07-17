@@ -2,7 +2,7 @@
  * 
  */
 $(document).ready(function() {
-	$("#login").click(function() {
+	$("#login-button").click(function() {
 		loginJson = '{"userName":"' + $("#username").val() + '","password":"' + $("#password").val() + '"}';
 		$.ajax({
 			contentType : 'application/json',

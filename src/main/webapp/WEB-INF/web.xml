@@ -68,7 +68,7 @@
 	</filter-mapping>
 	
 	<welcome-file-list>
-		<welcome-file>index.ftl</welcome-file>
+		<welcome-file>login.ftl</welcome-file>
 	</welcome-file-list>
 	
 </web-app>
