@@ -22,7 +22,7 @@
 	<!-- BEGIN PAGE LEVEL STYLES -->
 	<link href="media/css/login.css" rel="stylesheet" type="text/css"/>
 	<!-- END PAGE LEVEL STYLES -->
-	<link rel="shortcut icon" href="media/image/favicon.ico" />
+	<link rel="shortcut icon" href="images/login-logo.ico" />
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->

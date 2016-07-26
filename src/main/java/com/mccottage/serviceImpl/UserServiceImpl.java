@@ -34,8 +34,7 @@ public class UserServiceImpl extends BaseService implements UserService{
 		Result<User> result = new Result<User>();
 		try {
 			UserExample userExample = new UserExample();
-			userExample.or().andUserNameEqualTo(user.getUserName());
-			userExample.or().andPasswordEqualTo(user.getPassword());
+			userExample.or().andUserNameEqualTo(user.getUserName()).andPasswordEqualTo(user.getPassword());
 			List<User> userList = userMapper.selectByExample(userExample);
 			if (userList != null && userList.size() > 0) {
 				user = userList.get(0);
@@ -47,6 +46,7 @@ public class UserServiceImpl extends BaseService implements UserService{
 			}
 		} catch (Exception ex) {
 			log.error("login error : login Info : " + user);
+			result.setErrorMsg(ex.getMessage());
 		}
 		return result;
 	}

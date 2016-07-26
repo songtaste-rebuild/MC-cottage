@@ -2,8 +2,8 @@
  * 
  */
 $(document).ready(function() {
-	$("#username").val("请输入用户名");
-	$("#password").val("请输入密码");
+	$("#username").val("");
+	$("#password").val("");
 	$("#login-button").click(function() {
 		loginJson = '{"userName":"' + $("#username").val() + '","password":"' + $("#password").val() + '"}';
 		$.ajax({

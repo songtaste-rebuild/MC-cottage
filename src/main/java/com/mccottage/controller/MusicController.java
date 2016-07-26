@@ -1,5 +1,10 @@
 package com.mccottage.controller;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,8 +13,10 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.mccottage.base.BaseController;
@@ -64,6 +71,21 @@ public class MusicController extends BaseController {
 			mav.setViewName("error");
 		}
 		return mav;
+	}
+	
+	@RequestMapping(value="/music/uploadMusic.do")
+	public String uploadMusic(@RequestParam("musicFile") MultipartFile file ,@RequestParam("fileName") String fileName) {
+		BufferedOutputStream stream = null;
+		try {
+			// 读出文件
+			byte[] bytes = file.getBytes();
+			stream = new BufferedOutputStream(new FileOutputStream(new File("C:/" + fileName + "-upload.txt")));
+			stream.write(bytes);
+			stream.close();
+		} catch (Exception ex) {
+			log.error("uploadMusic exception, error msg : " + ex.getMessage());
+		}
+		return "upload";
 	}
 	
 }
