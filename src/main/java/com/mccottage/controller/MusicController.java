@@ -83,7 +83,7 @@ public class MusicController extends BaseController {
 			String suffix = f.getFileItem().getName().substring(f.getFileItem().getName().lastIndexOf("."));
 			// 读出文件
 			byte[] bytes = file.getBytes();
-			stream = new BufferedOutputStream(new FileOutputStream(new File("MusicFile" + fileName + suffix)));
+			stream = new BufferedOutputStream(new FileOutputStream(new File("C:" + File.separator + fileName + suffix)));
 			stream.write(bytes);
 			stream.close();
 		} catch (Exception ex) {
@@ -92,4 +92,20 @@ public class MusicController extends BaseController {
 		return "upload";
 	}
 	
+	/*@RequestMapping("/music/getFile.do")
+	public String getFile(@RequestParam("fileUrl") String fileUrl) {
+		try {
+			
+		} catch (Exception ex) {
+			log.error("getFile Exception, error msg : " + ex.getMessage());
+		}
+		return 
+	}*/
+	
 }
+
+
+
+
+
+
