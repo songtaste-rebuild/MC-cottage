@@ -17,7 +17,7 @@ public class FileUtils {
 	protected static Logger logger = LoggerFactory.getLogger(FileUtils.class);
 	
 	// 下载文件
-	public static boolean getFileFromUrl(String url, String saveLocalUrl) {
+	public static boolean saveFileFromUrl(String url, String saveLocalUrl) {
 		logger.debug("get file from url : " + url);
 		URLConnection connection = null;
 		try {
@@ -65,6 +65,22 @@ public class FileUtils {
 			
 		}
 		return false;
+	}
+	
+	// 获取文件
+	public static File getFileFromUrl(String localUrl) {
+		try {
+			// 读取文件
+			File file = new File(localUrl);
+			if (!file.exists()) {
+				logger.debug("file not found!, localUrl : " + localUrl);
+				return null;
+			}
+			return file;
+		} catch (Exception ex) {
+			logger.error("getFileFromUrl exception .. stack message : " + ex.getMessage());
+		}
+		return null;
 	}
 	
 	// test

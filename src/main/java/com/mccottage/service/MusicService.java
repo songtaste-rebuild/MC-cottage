@@ -1,8 +1,10 @@
 package com.mccottage.service;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.mccottage.entity.Music;
 import com.mccottage.entity.MusicExample;
@@ -18,7 +20,7 @@ import com.mccottage.utils.Result;
 public interface MusicService {
 	
 	static final Logger log = Logger.getLogger(MusicService.class);
-
+	
 	// 按照st音乐详情页面的url下载一首歌
 	public Result<Object> downloadMusicByOneUrl(String url);
 
@@ -42,5 +44,8 @@ public interface MusicService {
 	
 	// ID查询音乐
 	public Result<Music> selectMusicById(Long musicId);
+	
+	// 保存音乐到指定文件
+	public boolean saveMusic(MultipartFile file, String fileName, String saveLocalPath) throws IOException;
 
 }

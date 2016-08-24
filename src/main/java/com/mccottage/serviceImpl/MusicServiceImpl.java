@@ -1,8 +1,17 @@
 package com.mccottage.serviceImpl;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.text.DecimalFormat;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import com.mccottage.base.BaseService;
 import com.mccottage.entity.Music;
@@ -11,6 +20,7 @@ import com.mccottage.entity.MusicAlbumRelationExample;
 import com.mccottage.entity.MusicAlbumRelationExample.Criteria;
 import com.mccottage.entity.MusicExample;
 import com.mccottage.service.MusicService;
+import com.mccottage.utils.LogUtils;
 import com.mccottage.utils.Result;
 import com.mccottage.utils.SongtasteUtils;
 
@@ -139,5 +149,33 @@ public class MusicServiceImpl extends BaseService implements MusicService {
 			log.error("error message  " + ex.getMessage());
 		}
 		return result;
+	}
+
+	public boolean saveMusic(MultipartFile file, String fileName,String saveLocalPath) throws IOException {
+		if (file == null) return false;
+		CommonsMultipartFile f = null;
+		if (file instanceof CommonsMultipartFile) {
+			f = (CommonsMultipartFile) file;
+		}
+		// 获取文件后缀
+		String suffix = f.getFileItem().getName().substring(f.getFileItem().getName().lastIndexOf("."));
+		// 缓冲流读文件
+		BufferedInputStream input = new BufferedInputStream(f.getInputStream());
+		byte[] data = new byte[input.available()];
+		BufferedOutputStream buffOut = new BufferedOutputStream(new FileOutputStream(new File(saveLocalPath + File.separator + fileName + suffix)));
+		int len = -1;
+		int pos = 0;
+		// TODO test this code..
+		while ((len = input.read()) != -1) {
+			buffOut.write(data, pos, len);
+			pos += len;
+			
+			DecimalFormat formact = new DecimalFormat("#0.00");
+			String speed = formact.format((float)(pos) * 100 / (float)input.available()) + "%";
+			LogUtils.console("save file : " + fileName + ", speed is " + speed);
+		}
+		input.close();
+		buffOut.close();
+		return true;
 	}
 }

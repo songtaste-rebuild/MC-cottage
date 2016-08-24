@@ -23,6 +23,7 @@ import com.mccottage.entity.MusicExample;
 import com.mccottage.entity.MusicExample.Criteria;
 import com.mccottage.entity.User;
 import com.mccottage.entity.UserExample;
+import com.mccottage.utils.FileUtils;
 import com.mccottage.utils.Result;
 
 @Controller
@@ -92,15 +93,17 @@ public class MusicController extends BaseController {
 		return "upload";
 	}
 	
-	/*@RequestMapping("/music/getFile.do")
-	public String getFile(@RequestParam("fileUrl") String fileUrl) {
+	@RequestMapping("/music/file.do")
+	@ResponseBody
+	public File file(@RequestParam("fileUrl") String fileUrl) {
+		File file = null;
 		try {
-			
+			file = FileUtils.getFileFromUrl(fileUrl);
 		} catch (Exception ex) {
 			log.error("getFile Exception, error msg : " + ex.getMessage());
 		}
-		return 
-	}*/
+		return file;
+	}
 	
 }
 
