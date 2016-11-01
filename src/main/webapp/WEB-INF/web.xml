@@ -5,8 +5,17 @@
 	id="WebApp_ID" version="2.5">
 
 	<display-name>build by micro</display-name>
-
+	
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>MC-Cottage</param-value>
+	</context-param>
+	
+	<listener>  
+        <listener-class>com.mccottage.exrt.ApplicationListener</listener-class>  
+ 	</listener> 
 	<!-- Log4j配置 -->
+	
 	<context-param>
 		<param-name>log4jConfigLocation</param-name>
 		<param-value>classpath:log4j.properties</param-value>
@@ -17,15 +26,15 @@
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
 	</listener>
 	
-	<!-- spring 容器监听 -->
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:ApplicationContext.xml</param-value>
 	</context-param>
+	
+	<!-- spring 容器监听 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 	
 	<!-- spring mvc-->
 	<servlet>
