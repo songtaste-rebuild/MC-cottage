@@ -13,7 +13,10 @@ import com.mccottage.entity.RolePermissionRelation;
 import com.mccottage.entity.RolePermissionRelationExample;
 import com.mccottage.entity.User;
 import com.mccottage.service.PermissionRoleService;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 @Service
 public class PermissionRoleServiceImpl extends BaseService implements PermissionRoleService {
 
