@@ -11,7 +11,13 @@ import com.mccottage.aop.Media;
 public class Main {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:*.xml");
-		Media media = (Media)context.getBean("aopProxy");
+		// aop方法1
+		/*Media media = (Media)context.getBean("aopProxy");
+		media.play();*/
+		
+		// aop方法2
+		Media media = (Media)context.getBean("musicPlay");
 		media.play();
+		System.out.println("main end");
 	}
 }

@@ -72,19 +72,30 @@
 		</property>
 	</bean>
 	
-	<!-- 切点 -->
+	<!-- 方法1 手动匹配切点pointcut和通知advisor -->
+	<!-- 切点 
 	<bean id="musicPointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut">
 		<property name="pattern" value=".*play"/>
 	</bean>
-	<!-- 逻辑 -->
+	逻辑
 	<bean id="musicAdvice" class="org.springframework.aop.support.DefaultPointcutAdvisor">
 		<property name="pointcut" ref="musicPointcut"/>
 		<property name="advice" ref="musicAdvisor"/>
 	</bean>
-	<!-- 代理 -->
+	代理
 	<bean id="aopProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="interceptorNames" value="musicAdvice"/>
 		<property name="proxyInterfaces" value="com.mccottage.aop.Media"/>
 		<property name="target" ref="musicPlay"/>
+	</bean> -->
+	
+	<!--  方法2自动绑定切点和通知 -->
+	<!-- 切点 -->
+	<bean id="musicPointcut" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="pattern" value=".*play"/>
+		<property name="advice" ref="musicAdvisor"/>
 	</bean>
+	<!-- 逻辑 -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+
 </beans>
