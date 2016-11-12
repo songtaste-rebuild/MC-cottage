@@ -4,12 +4,11 @@ import java.lang.reflect.Method;
 
 import org.springframework.aop.AfterReturningAdvice;
 import org.springframework.aop.MethodBeforeAdvice;
-import org.springframework.stereotype.Component;
 
 /*
  * this programe writted by micro
  */
-@Component
+
 public class MusicAdvisor implements MethodBeforeAdvice, AfterReturningAdvice{
 
 	// 对应函数执行之后的返回
