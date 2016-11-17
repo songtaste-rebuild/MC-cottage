@@ -13,6 +13,7 @@ import com.mccottage.entity.RolePermissionRelation;
 import com.mccottage.entity.RolePermissionRelationExample;
 import com.mccottage.entity.User;
 import com.mccottage.service.PermissionRoleService;
+
 @Service
 public class PermissionRoleServiceImpl extends BaseService implements PermissionRoleService {
 
@@ -55,19 +56,23 @@ public class PermissionRoleServiceImpl extends BaseService implements Permission
 		return null;
 	}
 
-	@Override
 	public List<Permission> getPermissionByUserId(Long userId) {
 		// 一个用户一个角色
 		log.debug("getPermissionByUserId , userId = " + userId);
 		try {
-			/*RolePermissionRelationExample rolePermissionRelationExample = new RolePermissionRelationExample();
-			rolePermissionRelationExample.or().andRoleIdEqualTo(userMapper.selectByPrimaryKey(userId).getRoleId());
-			List<Permission> permissionList = new ArrayList<Permission>();
-			for (RolePermissionRelation rpr : rolePermissionRelationMapper.selectByExample(rolePermissionRelationExample)) {
-				permissionList.add(permissionMapper.selectByPrimaryKey(rpr.getPermissionId()));
-			}
-			return permissionList;*/
-			
+			/*
+			 * RolePermissionRelationExample rolePermissionRelationExample = new
+			 * RolePermissionRelationExample();
+			 * rolePermissionRelationExample.or().andRoleIdEqualTo(userMapper.
+			 * selectByPrimaryKey(userId).getRoleId()); List<Permission>
+			 * permissionList = new ArrayList<Permission>(); for
+			 * (RolePermissionRelation rpr :
+			 * rolePermissionRelationMapper.selectByExample(
+			 * rolePermissionRelationExample)) {
+			 * permissionList.add(permissionMapper.selectByPrimaryKey(rpr.
+			 * getPermissionId())); } return permissionList;
+			 */
+
 			// 调用
 			return getPermissionByRole(getRoleByUserId(userId).getId());
 		} catch (Exception ex) {

@@ -81,23 +81,23 @@
 	
 	<!--  方法2自动绑定切点和通知 -->
 	<!-- 切点 -->
-	<bean id="musicPointcut" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+	<!-- <bean id="musicPointcut" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
 		<property name="pattern" value=".*play"/>
 		<property name="advice" ref="musicAdvisor"/>
-	</bean>
+	</bean> -->
 	<!-- 逻辑 -->
-	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+	<!-- <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/> -->
 
 	<!-- spring fileUpload -->
-	<bean id="multipartResolver"
+	<!-- <bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="defaultEncoding" value="utf-8" />
 		<property name="maxUploadSize" value="10485760000" />
 		<property name="maxInMemorySize" value="40960" />
-	</bean>
+	</bean> -->
 	
 	
 	<!--  定时任务 -->
-	<task:annotation-driven scheduler="qbScheduler" mode="proxy"/>  
-    <task:scheduler id="qbScheduler" pool-size="10"/>  
+	<!-- <task:annotation-driven scheduler="qbScheduler" mode="proxy"/>  
+    <task:scheduler id="qbScheduler" pool-size="10"/>   -->
 </beans>

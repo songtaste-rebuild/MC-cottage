@@ -16,7 +16,6 @@ public class TestJob {
 		ThreadPoolExecutor executor = new ThreadPoolExecutor(10, 20, 100, TimeUnit.MINUTES, new LinkedBlockingDeque());
 		executor.execute(new Runnable() {
 			
-			@Override
 			public void run() {
 				for (int i = 0;i < 100;i ++) {
 					System.out.println("star to this thread : " + Thread.currentThread().getName() + " i = " + i);

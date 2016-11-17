@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class MusicPlay implements Media{
 
-	@Override
 	public void play() {
 		System.out.println("music ...");
 	}
